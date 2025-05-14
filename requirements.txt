@@ -4,3 +4,10 @@ pillow
 tensorflow
 keras
 einops
+opencv-python 
+opencv-contrib-python
+networkx 
+pillow
+scikit-image
+matplotlib
+networkx
