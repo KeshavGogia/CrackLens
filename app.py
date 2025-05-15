@@ -9,8 +9,11 @@ from preprocess import preprocess_image
 from meta_ensemble import apply_metaensemble
 from model_definitions import window_partition_tf
 from crack_quantification import analyze_crack, plot_mask_and_graph_to_base64
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
+
 
 # Model paths and loading
 model_paths = {
