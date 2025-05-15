@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crack Analysis Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Crack Analysis</h1>
+    <form id="uploadForm">
+      <label for="imageInput" class="custom-file-upload">
+        Choose Image
+      </label>
+      <input type="file" id="imageInput" accept="image/*" required>
+      <button type="submit">Analyze</button>
+    </form>
+    <div class="images-section" id="imagesSection" style="display:none;">
+      <div class="img-block">
+        <h2>Original Image</h2>
+        <img id="originalImage" src="" alt="Original" />
+      </div>
+      <div class="img-block">
+        <h2>Predicted Mask</h2>
+        <img id="maskImage" src="" alt="Mask" />
+      </div>
+      <div class="img-block">
+        <h2>Crack Graph</h2>
+        <img id="graphImage" src="" alt="Graph" />
+      </div>
+    </div>
+    <div class="analysis-section" id="analysisSection" style="display:none;">
+      <h2>Crack Analysis</h2>
+      <ul id="analysisList"></ul>
+    </div>
+    <div id="errorMsg"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
