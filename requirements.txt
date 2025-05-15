@@ -11,3 +11,4 @@ pillow
 scikit-image
 matplotlib
 networkx
+flask_cors
